@@ -16,18 +16,22 @@ function init() {
     let restablecer = document.querySelector("#restablecer");
     let filtrado = false;
     let boton = document.querySelector('#boton');
+
     boton.addEventListener("click", validarcaptcha);
     document.querySelector(".btn_links").addEventListener("click", toggleMenu);
+
     // estos estan comentados para que no se agreguen al servidor, cada vez que se carga la pagina
     //agregardatos("Maiky", "1200", "AK", "AK-47");
     //agregardatos("Juan", "1800", "Nova 3", "AWP");
     //agregardatos("MyBass", "600", "Plata 4", "P90");
     obtenerTodos();
+
     //boton para agregar datos de a 1 al servidor
     form.addEventListener("submit", function (event) {
         event.preventDefault();
         agregardatos(tag.value, horas.value, rango.value, arma.value);
     });
+
     //boton para agregar datos de a 3 al servidor
     agregartres.addEventListener("click", function (event) {
         event.preventDefault();
@@ -35,6 +39,7 @@ function init() {
         agregardatos(tag.value, horas.value, rango.value, arma.value);
         agregardatos(tag.value, horas.value, rango.value, arma.value);
     });
+
     //boton para borrar por completo la tabla, sin borrar los datos del servidor
     /*borrar.addEventListener("click", function (event) {
         event.preventDefault();
@@ -42,11 +47,13 @@ function init() {
         datosjugadores = [];
     });*/
     //boton que activa el filtro
+
     filtrar.addEventListener("click", function (event) {
         event.preventDefault();
         filtrado = true;
         obtenerTodos();
     });
+
     //boton para restablecer la tabla sin el filtro
     restablecer.addEventListener("click", function (event) {
         event.preventDefault();
@@ -54,6 +61,7 @@ function init() {
         obtenerTodos();
         filtro.value = '';
     })
+    
     function validarcaptcha() {
         let captcha = "L4G4RT0";
         let inputcaptcha = document.querySelector('#inputUsuario');
