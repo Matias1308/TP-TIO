@@ -1,6 +1,5 @@
 
 /*elementos*/
-
 body{
     background-color:black;
     }
@@ -85,7 +84,6 @@ body{
     }
     
     /* clases*/
-    
     .imgheader{
         max-height: 100px;
         width: 200px;
@@ -227,7 +225,7 @@ body{
         margin-top: 20px;
         text-transform: capitalize;
     }
-    
+
     @media only screen and (min-width: 769px)  {
         nav{
             color: white;
@@ -289,7 +287,6 @@ body{
         }
         
         /* clases*/
-        
         .imgheader{
             max-height: 250px;
             width: 500px;
@@ -366,7 +363,6 @@ body{
             width: 100px;
             height: 70px;
         }
-        
         
         .nombremapa{
             color: white;
