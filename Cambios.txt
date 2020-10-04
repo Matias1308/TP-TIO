@@ -1,0 +1,5 @@
+-Mejorar identado
+-Corregir Responsive
+-Mejorar HTML
+-Mejorar JS
+-Arreglar/mejorar estilos(CSS)

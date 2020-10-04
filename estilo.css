@@ -1,0 +1,430 @@
+
+/*elementos*/
+
+body{
+    background-color:black;
+    }
+    nav{
+        color: white;
+        display: flex;
+        background:rgb(235, 125, 35);
+        justify-content: space-around;
+        display: none;
+    }
+    nav.show{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    h1{
+        color: white;
+        text-transform: capitalize;
+        text-align: center;
+        padding-top: 40px;
+        font-size: 20px;
+        text-decoration: underline;
+    }
+    h2{
+        color: white;
+        text-transform: capitalize;
+        padding-top: 20px;
+        font-size: 15px;
+        text-align: center;
+        text-decoration: underline;
+    }
+    h3{
+        color: white;
+        text-transform: capitalize;
+        font-size: 14px;
+        text-decoration: underline;
+        text-align: center;
+    }
+    h4{
+        color: white;
+        text-transform: capitalize;
+        font-size: 14px;
+        text-align: center;
+        text-decoration: underline;
+    }
+    h5{
+        color: white;
+        text-transform: capitalize;
+        font-size: 20px;
+        text-align: center;
+        padding-left: 30px;
+    }
+    table{
+        padding-top: 50px;
+        height: 500px;
+        width: 300px;
+        border-collapse: collapse;
+        font-size: 5px;
+    }
+    thead{
+        color: white;
+        background-color: orangered;
+        text-align: center;
+        border: 1px black;
+        text-transform: capitalize;
+        font-size: 25px;
+    }
+    td,tr{
+        border: 1px solid white;
+    }
+    th{
+        text-align: center;
+        color: white;
+        text-transform: capitalize;
+    }
+    tbody{
+        text-align: center;
+        color: white;
+        text-transform: capitalize;
+        font-size: 20px;
+    }
+    
+    /* clases*/
+    
+    .imgheader{
+        max-height: 100px;
+        width: 200px;
+        display: block;
+        margin: auto;
+    }
+    .btn_links{
+        color:white;
+        padding: 5px;
+        background-color:rgb(235, 125, 35);
+        text-align: center;
+        border-bottom: 3px solid black;
+    }
+    .btn_links a{
+        color:black;
+        text-decoration: underline;
+    }
+    .item{
+        list-style: none;
+        color: black;
+        text-transform: uppercase;
+        padding: 1px;
+        display: flex;
+        align-items: center;
+    }
+    .iconnav{
+        width: 20px;
+        height: 10px;
+        padding-right: 10px;
+        padding-left: 10px;
+    }
+    .iconnav2{
+        width: 15px;
+        height: 10px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    .link{
+        text-decoration: none;
+        color: unset;
+        text-decoration: underline;
+    }
+    .parrafo{
+        color: white;
+        font-size: 10px;
+    }
+    .mododejuego{
+        color: white;
+        text-transform: capitalize;
+        font-size: 14px;
+        text-decoration: underline;
+    }
+    .inicio{
+        text-decoration: underline;
+        font-style: italic;
+        font-weight: bold;
+        font-size: 14px;
+    }
+    .images{
+        height: 200px;
+        width: 220px;
+        display: block;
+        margin: auto;
+    }
+    .form{
+        color: white;
+        font-size: 10px;
+        padding-top: 10px;
+    }
+    .head{
+        background-color: orangered;
+        font-size: 10px;
+    }
+    .tablaarmas{
+        font-size:10px;
+        max-width: 15px;
+    }
+    .armas{
+        width: 35px;
+        height: 20px;
+    }
+    .nombremapa{
+        color: white;
+        text-transform: capitalize;
+        padding-top: 20px;
+        font-size: 15px;
+        text-align: center;
+        text-decoration: underline;
+    }
+    .zonasmapas{
+        color: white;
+        text-transform: capitalize;
+        font-size: 14px;
+        text-decoration: underline;
+    }
+    .tops{
+        color: white;
+        text-transform: capitalize;
+        font-size: 20px;
+        text-align: center;
+        padding-left: 30px;
+    }
+    .contenedor{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+    .izquierda{
+        width: 35%;
+    }
+    .derecha{
+        width: 35%;
+    }
+    .enlace{
+        color: darkslateblue;
+        font-size: 15px;
+        justify-content: center;
+    }
+    .listaizq{
+        display: flex;
+        flex-direction: column;
+        color: white;
+        font-size: 10px;
+        max-width: 250px; 
+    }
+    .listader{
+        color: white;
+        font-size: 10px;
+        max-width: 250px;
+        text-align: center;
+        list-style-position: inside;
+    }
+    .iconequipo{
+        width: 60px;
+        height: 45px;
+    }
+    #form-datos{
+        color: white;
+        margin-top: 20px;
+        text-transform: capitalize;
+    }
+    
+    @media only screen and (min-width: 769px)  {
+        nav{
+            color: white;
+            display: flex;
+            background: rgb(235, 125, 35);
+            justify-content: space-around;
+        }
+        h1{
+            color: white;
+            text-transform: capitalize;
+            text-align: center;
+            padding-top: 40px;
+            font-size: 40px;
+        }
+        h2{
+            color: white;
+            text-transform: capitalize;
+            padding-top: 20px;
+            font-size: 35px;
+            text-align: center;
+        }
+        h3{
+            color: white;
+            text-transform: capitalize;
+            font-size: 26px;
+            text-align: center;
+        }
+        h4{
+            color: white;
+            text-transform: capitalize;
+            font-size: 26px;
+            text-align: center;
+        }
+        h5{
+            color: white;
+            text-transform: capitalize;
+            font-size: 40px;
+            padding-left: 100px;
+        }
+        table{
+            padding-top: 50px;
+            height: 100%;
+            width: 100%;
+            border-collapse: collapse;
+            font-size: 20px;
+        }
+        td, tr{
+            border: 1px solid white;
+        }
+        th{
+            text-align: center;
+            color: white;
+            text-transform: capitalize;
+        }
+        tbody{
+            text-align: center;
+            color: white;
+            text-transform: capitalize;
+        }
+        
+        /* clases*/
+        
+        .imgheader{
+            max-height: 250px;
+            width: 500px;
+            display: block;
+            margin: auto;
+        }
+        .btn_links{
+            display: none;
+        }
+        .navegación{
+            color: white;
+            display: flex;
+            background: rgb(235, 125, 35);
+            justify-content: space-around;
+        }
+        .item{
+            list-style: none;
+            color: black;
+            text-transform: uppercase;
+            padding: 1px;
+            display: flex;
+            align-items: center;
+        }
+        .iconnav{
+            width: 80px;
+            height: 30px;
+            padding-right: 20px;
+            padding-left: 20px;
+        }
+        .iconnav2{
+            width: 35px;
+            height: 30px;
+            padding-left: 20px;
+            padding-right: 20px;
+        }
+        .link{
+            text-decoration: none;
+            color: unset;
+        }
+        .parrafo{
+            color: white;
+            font-size: 22px;
+        }
+        .mododejuego{
+            color: white;
+            text-transform: capitalize;
+            font-size: 30px;
+        }
+        .inicio{
+            text-decoration: underline;
+            font-style: italic;
+            font-weight: bold;
+            font-size: 24px;
+        }
+        .images{
+            height: 500px;
+            width: 1000px;
+            display: block;
+            margin: auto;
+        }
+        .form{
+            color: white;
+            font-size: 24px;
+            padding-top: 20px;
+        }
+        .head{
+            background-color: orangered;
+            font-size: 35px;
+        }
+        .tablaarmas{
+            font-size:25px;
+        }
+        .armas{
+            width: 100px;
+            height: 70px;
+        }
+        
+        
+        .nombremapa{
+            color: white;
+            text-transform: capitalize;
+            padding-top: 20px;
+            font-size: 35px;
+            text-align: center;
+        }
+        .zonasmapas{
+            color: white;
+            text-transform: capitalize;
+            font-size: 26px;
+        }
+        
+        .tops{
+            color: white;
+            text-transform: capitalize;
+            font-size: 40px;
+            padding-left: 100px;
+        }
+        .contenedor{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+        }
+        
+        .izquierda{
+            width: 550px;
+        }
+        .derecha{
+            width: 550px;
+        }
+        .enlace{
+            color: darkslateblue;
+            font-size: 30px;
+        }
+        .listaizq{
+            color: white;
+            font-size: 25px;
+            max-width: 650px;
+            list-style-position: inside;
+        }
+        .listader{
+            color: white;
+            font-size: 25px;
+            max-width: 650px;
+            text-align: center;
+            list-style-position: inside;}
+        
+        
+        .iconequipo{
+            width: 60px;
+            height: 45px;
+        }
+        
+        #form-datos{
+            color: white;
+            margin-top: 20px;
+            text-transform: capitalize;
+        }
+    }
