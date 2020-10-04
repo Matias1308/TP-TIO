@@ -1,5 +1,4 @@
 "use strict";
-
 document.addEventListener('DOMContentLoaded', init);
 
 function init() {
@@ -16,6 +15,10 @@ function init() {
     let filtrar = document.querySelector("#filtrar");
     let restablecer = document.querySelector("#restablecer");
     let filtrado = false;
+    let boton = document.querySelector('#boton');
+
+    boton.addEventListener("click", validarcaptcha);
+    document.querySelector(".btn_links").addEventListener("click", toggleMenu);
 
     // estos estan comentados para que no se agreguen al servidor, cada vez que se carga la pagina
     //agregardatos("Maiky", "1200", "AK", "AK-47");
@@ -57,7 +60,23 @@ function init() {
         obtenerTodos();
         filtro.value = '';
     })
-    
+
+    function validarcaptcha() {
+        let captcha = "L4G4RT0";
+        let inputcaptcha = document.querySelector('#inputUsuario');
+        let ingresoUsuario = inputcaptcha.value;
+        if (ingresoUsuario === captcha) {
+            alert("Codigo generado con exito, comentario enviado");
+        }
+        else {
+            alert("Codigo no valido, intente devuelta por favor");
+        }
+    }
+
+    function toggleMenu() {
+        document.querySelector("nav").classList.toggle("show");
+    }
+
     //funcion que agrega datos al servidor y llama a otra para leerlos y cargar la tabla con los datos que recibe del servidor
     function agregardatos(tag, horas, rango, arma) {
         let data = {
