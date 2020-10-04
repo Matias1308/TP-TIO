@@ -387,8 +387,7 @@ body{
             display: flex;
             flex-direction: row;
             justify-content: space-around;
-        }
-        
+        } 
         .izquierda{
             width: 550px;
         }
@@ -405,6 +404,7 @@ body{
             max-width: 650px;
             list-style-position: inside;
         }
+
         .listader{
             color: white;
             font-size: 25px;
@@ -412,11 +412,13 @@ body{
             text-align: center;
             list-style-position: inside;}
         
+
         .iconequipo{
             width: 60px;
             height: 45px;
         }
         
+
         #form-datos{
             color: white;
             margin-top: 20px;
