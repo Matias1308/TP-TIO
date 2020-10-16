@@ -10,7 +10,7 @@ function init() {
     let rango = document.querySelector("#rango");
     let arma = document.querySelector("#arma");
     let agregartres = document.querySelector("#agregar-3");
-    //let borrar = document.querySelector("#borrartabla");
+    let borrar = document.querySelector("#borrartabla");
     let filtro = document.querySelector("#filtro");
     let filtrar = document.querySelector("#filtrar");
     let restablecer = document.querySelector("#restablecer");
@@ -46,7 +46,6 @@ function init() {
         tableBody.innerHTML = '';
         datosjugadores = [];
     });*/
-    //boton que activa el filtro
 
     filtrar.addEventListener("click", function (event) {
         event.preventDefault();
